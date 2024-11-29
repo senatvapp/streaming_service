@@ -10,6 +10,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(bodyParser.json());
+console.log("Cambio Prueba"); 
 
 // Usar las rutas de contenido
 app.use('/api', contenidoRoutes);
