@@ -12,6 +12,9 @@ const cors = require('cors');
 require('dotenv').config();
 const app = express();
 app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:8081', // Cambia esto a la URL de tu frontend
+}));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 
